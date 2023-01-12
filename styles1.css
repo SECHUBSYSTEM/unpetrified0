@@ -42,10 +42,12 @@
     padding: 20px 40px;
     position: relative;
 }
-
+.show{
+margin-right:-80px
+}
 .shown {
     justify-content: space-around;
-    margin: 40px 100px;
+    margin: 40px 100px 40px -60px;
     transition: all 0.5s ease-out;
     display: flex;
     align-items: center;
@@ -81,7 +83,31 @@
     color: rgb(5, 125, 155);
     transition: 0.4s ease-out;
 }
+@media (max-width:960px){
+     .show {
+        margin-right: -200px;
+    }
 
+    .shown {
+        display: flex;
+        margin-left: -60px;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+}
 @media (max-width:600px) {
     .section {
         display: flex;
