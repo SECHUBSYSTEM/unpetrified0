@@ -19,7 +19,8 @@ $(".minus").on("click", function (e) {
 $(".plus").on("click", function (ev) {
 
     var newVal = eval($(ev.target).prev().text() + "+1");
-    $(ev.target).prev().text(newVal);
+    if (parseInt(newVal) <= 7) $(ev.target).prev().text(newVal);
+    else return
     update()
 
 })
