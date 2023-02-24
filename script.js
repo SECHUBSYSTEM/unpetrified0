@@ -33,7 +33,7 @@ function update(addition = data) {
     $("#valueD2").text(noOfBathrooms);
 
     var bedroomCost, bathroomCost;
-    if (parseInt(noOfBedrooms) > 1) {
+    if (parseInt(noOfBedrooms) > 1 && <7) {
         var bedroomNet = eval(noOfBedrooms + "-1");
         bedroomCost = eval("190+" + bedroomNet + "*100");
     } else if (parseInt(noOfBedrooms) == 0) {
@@ -42,7 +42,7 @@ function update(addition = data) {
         bedroomCost = "190";
     }
 
-    if (parseInt(noOfBathrooms) > 1) {
+    if (parseInt(noOfBathrooms) > 1 && <7) {
         var bathroomNet = eval(noOfBathrooms + "-1");
         bathroomCost = eval("190+" + bathroomNet + "*80");
     } else if (parseInt(noOfBathrooms) == 0) {
